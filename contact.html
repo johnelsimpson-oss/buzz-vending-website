@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact Buzz Vending | Free Vending Machines, London &amp; Kent</title>
+<meta name="description" content="Get in touch about a free vending machine for your London or Kent site. Email hello@buzzvending.co.uk or send us your site details and we'll come back with a straight answer.">
+<link rel="canonical" href="https://www.buzzvending.co.uk/contact.html">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Buzz Vending">
+<meta property="og:locale" content="en_GB">
+<meta property="og:title" content="Contact Buzz Vending | Free Vending Machines, London &amp; Kent">
+<meta property="og:description" content="Tell us about your site and we'll tell you whether a free machine makes sense.">
+<meta property="og:url" content="https://www.buzzvending.co.uk/contact.html">
+<meta property="og:image" content="https://www.buzzvending.co.uk/assets/img/buzz-social.png">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="assets/img/favicon.png" sizes="any">
+<link rel="apple-touch-icon" href="assets/img/favicon.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800;900&display=swap">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="logo" href="index.html" aria-label="Buzz Vending — home">
+      <img src="assets/img/buzz-vending-logo-white.png" alt="Buzz Vending" width="477" height="200">
+    </a>
+    <button class="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav" id="primary-nav" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <div class="has-sub">
+        <a href="free-vending-machines.html">Services</a>
+        <ul class="sub">
+          <li><a href="free-vending-machines.html">Free Vending Machines</a></li>
+          <li><a href="snack-drink-vending.html">Snack &amp; Drink Vending</a></li>
+          <li><a href="contactless-payments.html">Contactless Payments</a></li>
+        </ul>
+      </div>
+      <div class="has-sub">
+        <a href="vending-machines-london.html">Areas</a>
+        <ul class="sub">
+          <li><a href="vending-machines-london.html">Vending Machines London</a></li>
+          <li><a href="vending-machines-kent.html">Vending Machines Kent</a></li>
+        </ul>
+      </div>
+      <a class="btn btn--primary" href="contact.html" aria-current="page">Get a free machine</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="hero">
+  <div class="comb" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="hero-inner">
+      <p class="eyebrow">Contact</p>
+      <h1>Tell us about your <span class="hl">site</span>.</h1>
+      <p class="lede">A few details is all we need to tell you whether a free machine makes sense. No sales pitch, no obligation — and a straight answer either way.</p>
+    </div>
+  </div>
+</section>
+
+<section class="pad">
+  <div class="wrap">
+    <div class="split split--wide-left" style="align-items:start">
+
+      <!-- ================================================== FORM -->
+      <div class="reveal">
+        <div class="form-card">
+          <h2 style="font-size:clamp(1.5rem,2.4vw,1.9rem)">Site enquiry</h2>
+          <p style="margin-bottom:28px">Fields marked * are the ones we really need. The rest just helps us give you a better answer first time.</p>
+
+          <!--
+            ============================================================
+            FORM SETUP — READ THIS
+            ------------------------------------------------------------
+            Right now this form opens the visitor's email app addressed
+            to hello@buzzvending.co.uk (works everywhere, zero setup).
+
+            To receive enquiries straight into your inbox instead:
+              1. Sign up free at https://formspree.io (or use Netlify Forms)
+              2. Create a form pointed at hello@buzzvending.co.uk
+              3. Replace the action below with your endpoint, e.g.
+                 action="https://formspree.io/f/xyzabcde"
+              4. Change method="post" (it's already set)
+            The hidden _next field sends people to thank-you.html after.
+            ============================================================
+          -->
+          <form data-enquiry
+                action="mailto:hello@buzzvending.co.uk"
+                method="post">
+
+            <input type="hidden" name="_subject" value="Website enquiry — Buzz Vending">
+            <input type="hidden" name="_next" value="https://www.buzzvending.co.uk/thank-you.html">
+
+            <!-- spam trap: hidden from people, tempting to bots -->
+            <div class="hp" aria-hidden="true">
+              <label for="company-url">Leave this blank</label>
+              <input type="text" id="company-url" name="_gotcha" tabindex="-1" autocomplete="off">
+            </div>
+
+            <div class="field-row">
+              <div class="field">
+                <label for="name">Your name *</label>
+                <input type="text" id="name" name="name" required autocomplete="name">
+              </div>
+              <div class="field">
+                <label for="company">Company / site name *</label>
+                <input type="text" id="company" name="company" required autocomplete="organization">
+              </div>
+            </div>
+
+            <div class="field-row">
+              <div class="field">
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" required autocomplete="email">
+              </div>
+              <div class="field">
+                <label for="phone">Phone <span class="hint">(optional)</span></label>
+                <input type="tel" id="phone" name="phone" autocomplete="tel">
+              </div>
+            </div>
+
+            <div class="field-row">
+              <div class="field">
+                <label for="postcode">Site postcode *</label>
+                <input type="text" id="postcode" name="postcode" required autocomplete="postal-code" placeholder="e.g. DA1 or E16">
+              </div>
+              <div class="field">
+                <label for="people">People on site</label>
+                <select id="people" name="people">
+                  <option value="">Select…</option>
+                  <option>Under 15</option>
+                  <option>15–30</option>
+                  <option>30–75</option>
+                  <option>75–150</option>
+                  <option>150+</option>
+                  <option>Not sure</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="sitetype">Type of site</label>
+              <select id="sitetype" name="sitetype">
+                <option value="">Select…</option>
+                <option>Industrial / trading estate</option>
+                <option>Warehouse or distribution centre</option>
+                <option>Business park or office</option>
+                <option>Vehicle or transport depot</option>
+                <option>Care home</option>
+                <option>Gym or leisure centre</option>
+                <option>Student or staff accommodation</option>
+                <option>Self-storage or trade counter</option>
+                <option>Other</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="message">Anything else we should know? <span class="hint">(optional)</span></label>
+              <textarea id="message" name="message" placeholder="Shift patterns, existing machines, access restrictions, where you'd want it to go…"></textarea>
+            </div>
+
+            <label class="consent" for="consent">
+              <input type="checkbox" id="consent" name="consent" value="yes" data-label="Consent to be contacted" required>
+              <span>I'm happy for Buzz Vending to contact me about this enquiry. See our <a href="privacy.html">privacy notice</a>. *</span>
+            </label>
+
+            <button class="btn btn--primary" type="submit" style="width:100%">Send enquiry</button>
+
+            <p class="form-note">Prefer email? Write to <a href="mailto:hello@buzzvending.co.uk"><strong>hello@buzzvending.co.uk</strong></a> and include your site postcode and rough headcount.</p>
+          </form>
+        </div>
+      </div>
+
+      <!-- ============================================== DETAILS -->
+      <div class="reveal" data-delay="120">
+        <div class="showcase" style="min-height:auto;display:block">
+          <div class="comb" aria-hidden="true"></div>
+          <div class="showcase-body">
+            <p class="eyebrow">Get in touch</p>
+            <h3 style="margin-bottom:10px">Direct contact</h3>
+            <ul class="contact-list">
+              <li>
+                <div class="icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="5" width="19" height="14" rx="2.5"/><path d="M3 7l9 6 9-6"/></svg>
+                </div>
+                <div>
+                  <b>Email</b>
+                  <a href="mailto:hello@buzzvending.co.uk">hello@buzzvending.co.uk</a>
+                </div>
+              </li>
+              <li>
+                <div class="icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-5.6-7-11a7 7 0 1 1 14 0c0 5.4-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>
+                </div>
+                <div>
+                  <b>Coverage</b>
+                  <span style="color:#fff;font-weight:700;font-size:1.05rem">Greater London &amp; Kent</span>
+                </div>
+              </li>
+              <li>
+                <div class="icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>
+                </div>
+                <div>
+                  <b>Response time</b>
+                  <span style="color:#fff;font-weight:700;font-size:1.05rem">Within one working day</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:26px">
+          <h3>What happens next</h3>
+          <ol style="padding-left:1.1em">
+            <li>We read your enquiry and check it against our route.</li>
+            <li>We come back — usually within one working day — with an honest view.</li>
+            <li>If it looks promising, we arrange a short site visit.</li>
+            <li>If it works, we install, typically within a couple of weeks.</li>
+          </ol>
+          <p style="font-size:.94rem;margin-top:6px">If your site isn't right for a machine, we'll say so plainly. We'd rather do that than waste your time.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="pad-sm tint">
+  <div class="wrap wrap--narrow center">
+    <div class="reveal">
+      <p class="eyebrow" style="justify-content:center">Already a host site?</p>
+      <h2 style="font-size:clamp(1.4rem,2.6vw,2rem)">Need a restock, a repair or a refund?</h2>
+      <p>Email <a href="mailto:hello@buzzvending.co.uk"><strong>hello@buzzvending.co.uk</strong></a> with your site name and what's wrong, and we'll get on it. Machine faults, jams, chiller problems and card reader issues are all ours to fix.</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo"><img src="assets/img/buzz-vending-logo-white.png" alt="Buzz Vending" width="477" height="200"></div>
+        <p>Fully managed snack and drink vending machines for workplaces across London and Kent.</p>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="free-vending-machines.html">Free Vending Machines</a></li>
+          <li><a href="snack-drink-vending.html">Snack &amp; Drink Vending</a></li>
+          <li><a href="contactless-payments.html">Contactless Payments</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Areas</h4>
+        <ul>
+          <li><a href="vending-machines-london.html">Vending Machines London</a></li>
+          <li><a href="vending-machines-kent.html">Vending Machines Kent</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="privacy.html">Privacy</a></li>
+          <li><a href="mailto:hello@buzzvending.co.uk">hello@buzzvending.co.uk</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bar">
+      <p>&copy; <span data-year>2026</span> Buzz Vending. All rights reserved.</p>
+      <p><a href="privacy.html">Privacy &amp; cookies</a></p>
+    </div>
+  </div>
+</footer>
+
+
+<!-- sticky mobile call-to-action -->
+<div class="mobile-cta">
+  <a class="btn btn--ghost" href="mailto:hello@buzzvending.co.uk">Email us</a>
+  <a class="btn btn--primary" href="contact.html">Get a free machine</a>
+</div>
+
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>
