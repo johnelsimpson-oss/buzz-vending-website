@@ -123,17 +123,48 @@
         return;
       }
 
+      // Real endpoint (Formspree etc): submit in the background so the
+      // visitor never leaves the page, then swap the form for a thank-you
+      // message right there on the contact card.
+      e.preventDefault();
+
       var btn = form.querySelector('button[type="submit"]');
+      var note = form.querySelector('.form-note');
+
       if (btn) {
         btn.disabled = true;
         btn.dataset.label = btn.textContent;
         btn.textContent = 'Sending…';
-        // Re-enable if the browser blocks or the request fails to navigate.
-        setTimeout(function () {
+      }
+
+      fetch(action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { 'Accept': 'application/json' }
+      }).then(function (response) {
+        if (response.ok) {
+          var card = form.closest('.form-card') || form.parentNode;
+          var success = document.createElement('div');
+          success.className = 'form-success';
+          success.setAttribute('role', 'status');
+          success.innerHTML = '<h3>Thanks — that\'s with us.</h3>' +
+            '<p>We\'ll come back to you shortly. If it\'s urgent, email ' +
+            '<a href="mailto:hello@buzzvending.co.uk"><strong>hello@buzzvending.co.uk</strong></a> ' +
+            'directly.</p>';
+          form.replaceWith(success);
+        } else {
+          throw new Error('Form endpoint returned ' + response.status);
+        }
+      }).catch(function () {
+        if (btn) {
           btn.disabled = false;
           btn.textContent = btn.dataset.label;
-        }, 8000);
-      }
+        }
+        if (note) {
+          note.innerHTML = 'Something went wrong sending that — please email us directly at ' +
+            '<a href="mailto:hello@buzzvending.co.uk"><strong>hello@buzzvending.co.uk</strong></a> instead.';
+        }
+      });
     });
   }
 

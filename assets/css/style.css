@@ -770,6 +770,16 @@ section { position: relative; }
 
 .form-note { font-size: .84rem; margin-top: 18px; }
 
+.form-success {
+  text-align: center;
+  padding: 20px 0;
+}
+.form-success h3 {
+  font-size: clamp(1.3rem, 2.2vw, 1.6rem);
+  margin-bottom: 10px;
+}
+.form-success p { color: var(--body); margin: 0; }
+
 /* honeypot */
 .hp { position: absolute; left: -9999px; opacity: 0; height: 0; overflow: hidden; }
 
